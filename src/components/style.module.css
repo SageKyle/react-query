@@ -1,0 +1,110 @@
+/* Navbar */
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin: 2rem 0;
+	gap: 2rem;
+}
+
+.navLink {
+	text-transform: capitalize;
+	font-size: 1.8rem;
+	transition: all ease-in-out 0.2s;
+}
+
+.navLink:hover {
+	filter: invert(10);
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Notes */
+.listContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 2rem;
+	width: inherit;
+	margin: 4rem 0;
+}
+
+.listItem {
+	width: 100%;
+	padding: 2rem;
+	list-style: none;
+	border: 2px solid;
+	border-radius: 0.5rem;
+	position: relative;
+}
+
+.listHeader {
+	text-transform: capitalize;
+	font-size: 2rem;
+	border-bottom: 2px;
+}
+
+.listNote {
+	cursor: pointer;
+}
+
+.trashIcon {
+	width: 2rem;
+	color: rgb(230, 93, 43);
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+
+.error {
+	color: orangered;
+	display: inline-block;
+	margin-block: 2rem;
+}
+
+/* New Note */
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 4rem;
+}
+
+.titleInput {
+	width: 100%;
+	padding: 1rem 2rem;
+	margin-block: 4rem 2rem;
+	border-radius: 0.5rem;
+}
+
+.noteInput {
+	width: 100%;
+	height: 30rem;
+	border-radius: 0.5rem;
+	resize: none;
+	padding: 1rem 2rem;
+}
+
+.btn {
+	background-color: cornflowerblue;
+	padding: 1rem 2rem;
+	margin: 3rem auto;
+	text-transform: capitalize;
+	border: 2px solid currentColor;
+	font-size: 2rem;
+	color: white;
+	width: fit-content;
+	cursor: pointer;
+	border-radius: 1rem;
+	transition: all ease-in-out 0.2s;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: cornflowerblue;
+}
